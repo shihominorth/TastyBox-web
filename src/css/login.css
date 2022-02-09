@@ -1,0 +1,35 @@
+body {
+    width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 60vw 40vw;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "left right";
+  width: 100%;
+  color: black;
+  height: 1000px;
+}
+
+.left-area {
+  grid-area: left;
+  background-image: url(../images/background-img.png);
+  height: 1000px;
+}
+
+.login-area {
+  grid-area: right;
+  height: 1000px;
+  display: block;
+}
+
+.login-contents {
+    width: 70%;
+    height: 70%;
+}
+
+.form-components {
+    width: 100%;
+}
