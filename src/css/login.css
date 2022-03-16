@@ -1,35 +1,127 @@
-body {
-    width: 100%;
+
+
+.icon {
+  width: 50px;
+  height: 50px;
 }
+
+header {
+  grid-area: header;
+}
+
+.navbar {
+  background-color: #ffa500 !important;
+  color: aliceblue !important;
+  top: 0;
+}
+
+.navbar-brand {
+  margin-left: 10px;
+  color: aliceblue !important;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+#navbarNav .nav-item .nav-link {
+  color: aliceblue !important;
+}
+
+#navbarNav .nav-item .nav-link:hover {
+  color: yellow !important;
+}
+
+
 
 main {
   display: grid;
   grid-template-columns: 60vw 40vw;
   grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas: "left right";
+  grid-template-areas: "left-area login-area";
   width: 100%;
   color: black;
-  height: 1000px;
+  height: auto;
+  
 }
 
-.left-area {
-  grid-area: left;
+main .left-area {
+  grid-area: left-area;
   background-image: url(../images/background-img.png);
-  height: 1000px;
+  height: 1fr;
+  position: relative;
+}
+
+.left-area::after {
+  background-color: rgba(254, 216, 177, 0.5);
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.left-area .welcome-text {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 400px;
+  color: white;
+  z-index: 1;
+}
+
+.sign_up_contents {
+  position: absolute;
+  z-index: 1;
+  width: 70%;
 }
 
 .login-area {
-  grid-area: right;
-  height: 1000px;
-  display: block;
+  grid-area: login-area;
+  height: 600px;
+  display: flex;
+  align-items: center;
 }
 
 .login-contents {
-    width: 70%;
-    height: 70%;
+  width: 70%;
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.login-form {
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .form-components {
-    width: 100%;
+  width: 100%;
+}
+
+.form-components .password-textfield {
+  width: 100%;
+}
+
+.login-with-other-plattform-account {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.login-button {
+  width: 100%;
+ margin-bottom: 10px;
+}
+
+
+
+footer {
+  height: 10vh;
+  text-align: center;
 }

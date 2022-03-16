@@ -22,14 +22,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/landing_page.css" />
-    <link rel="icon" href="../images/icon.png">
+    <link rel="icon" href="../images/icon.png" />
     <title>TastyBox</title>
   </head>
   <body>
- 
     <main>
       <div id="top">
-        <div class="top-text">
+        <div class="top-content">
           <h1>Tastybox</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae
@@ -47,7 +46,7 @@
             <button
               type="button"
               class="btn btn-outline-primary btn-lg login-button"
-              onclick="location.href='home.html'"
+              onclick="location.href='login.html'"
             >
               Login
             </button>
@@ -63,12 +62,9 @@
       <div id="meals">
         <div class="meals-images">
           <div class="meals-image">
-            <img
-              class="meals-main-image"
-              src="../images/food1.jpg"
-              alt=""
-              srcset=""
-            />
+            <div class="meals-main-image">
+              <img src="../images/food1.jpg" alt="" srcset="" />
+            </div>
             <div class="explanation">
               <img
                 class="number"
@@ -83,7 +79,6 @@
               </p>
             </div>
           </div>
-
           <div class="meals-image">
             <div class="explanation">
               <img
@@ -141,7 +136,7 @@
               </p>
             </div>
             <img
-              class="meals-main-image"
+              class="meals-main-image humburger"
               src="../images/food4.jpg"
               alt=""
               srcset=""
@@ -150,15 +145,20 @@
         </div>
       </div>
       <div id="container">
-        <div id="left"></div>
-        <div id="center">
+        <div class="left"></div>
+        <div class="center">
           <div class="functions-title">
             <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
           </div>
           <div class="functions">
             <div class="function">
               <h3>Timeline</h3>
-              <img class="screenshot" src="../images/function.jpg" alt="" srcset="" />
+              <img
+                class="screenshot"
+                src="../images/function.jpg"
+                alt=""
+                srcset=""
+              />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                 vitae molestie dolor. Donec vel pretium velit. Pellentesque
@@ -175,7 +175,12 @@
             </div>
             <div class="function">
               <h3>Recipe with your ingredients</h3>
-              <img class="screenshot" src="../images/function.jpg" alt="" srcset="" />
+              <img
+                class="screenshot"
+                src="../images/function.jpg"
+                alt=""
+                srcset=""
+              />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                 vitae molestie dolor. Donec vel pretium velit. Pellentesque
@@ -192,7 +197,12 @@
             </div>
             <div class="function">
               <h3>Ranking</h3>
-              <img class="screenshot" src="../images/function.jpg" alt="" srcset="" />
+              <img
+                class="screenshot"
+                src="../images/function.jpg"
+                alt=""
+                srcset=""
+              />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                 vitae molestie dolor. Donec vel pretium velit. Pellentesque
@@ -209,9 +219,9 @@
             </div>
           </div>
         </div>
-        <div id="right"></div>
+        <div class="right"></div>
       </div>
-      <div class="service-start">
+      <div id="service-start">
         <div class="service-start-content">
           <h3>Let's begin Tastybox!</h3>
           <br />
